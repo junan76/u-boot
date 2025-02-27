@@ -23,3 +23,19 @@
 		stdout-path = "serial0:115200n8";
 	};
 };
+
+&i2c4 {
+	status = "disabled";
+};
+
+&pmic {
+	status = "disabled";
+};
+
+&sdmmc1 {
+	cd-gpios = <&gpioh 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+};
+
+&ethernet0 {
+	phy-reset-gpios = <&gpioh 2 GPIO_ACTIVE_LOW>;
+};

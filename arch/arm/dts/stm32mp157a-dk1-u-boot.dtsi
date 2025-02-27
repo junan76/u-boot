@@ -27,7 +27,7 @@
 	};
 #endif
 
-#ifdef CONFIG_STM32MP15X_STM32IMAGE
+#if 0
 	/* only needed for boot with TF-A, witout FIP support */
 	firmware {
 		optee {
